@@ -1,0 +1,52 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'aoc-23'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=aoc-23",
+                    "--package=aoc-23",
+                ],
+                "filter": {
+                    "name": "aoc-23",
+                    "kind": "bin"
+                }
+            },
+            "args": [
+                "--in-file",
+                "./input/day_three.txt",
+                "--day",
+                "3",
+                "--question",
+                "1",
+            ],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'aoc-23'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=aoc-23",
+                    "--package=aoc-23"
+                ],
+                "filter": {
+                    "name": "aoc-23",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        }
+    ]
+}
