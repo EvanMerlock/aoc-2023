@@ -5,6 +5,7 @@ use clap::Parser;
 mod day_one;
 mod day_two;
 mod day_three;
+mod day_four;
 
 #[derive(Parser)]
 #[command(version = "0.0.1", author = "Evan Merlock")]
@@ -29,6 +30,8 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
         (2, 2) => day_two::question_two(in_file)?,
         (3, 1) => day_three::question_one(in_file)?,
         (3, 2) => day_three::question_two(in_file)?,
+        (4, 1) => day_four::question_one(in_file)?,
+        (4, 2) => day_four::question_two(in_file)?,
         _ => panic!("Invalid day/question combination!")
     };
 
