@@ -21,11 +21,11 @@
             },
             "args": [
                 "--in-file",
-                "./input/day_four_ex.txt",
+                "./input/day_five.txt",
                 "--day",
-                "4",
+                "5",
                 "--question",
-                "2",
+                "1",
             ],
             "cwd": "${workspaceFolder}"
         },
