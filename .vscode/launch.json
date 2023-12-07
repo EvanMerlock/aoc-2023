@@ -21,9 +21,9 @@
             },
             "args": [
                 "--in-file",
-                "./input/day_five.txt",
+                "./input/day_six.txt",
                 "--day",
-                "5",
+                "6",
                 "--question",
                 "1",
             ],
