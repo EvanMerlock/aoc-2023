@@ -8,6 +8,7 @@ mod day_three;
 mod day_four;
 mod day_five;
 mod day_six;
+mod day_seven;
 
 #[derive(Parser)]
 #[command(version = "0.0.1", author = "Evan Merlock")]
@@ -38,6 +39,8 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
         (5, 2) => day_five::question_two(in_file)?,
         (6, 1) => day_six::question_one(in_file)?,
         (6, 2) => day_six::question_two(in_file)?,
+        (7, 1) => day_seven::question_one(in_file)?,
+        (7, 2) => day_seven::question_two(in_file)?,
         _ => panic!("Invalid day/question combination!")
     };
 
